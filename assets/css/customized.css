@@ -1,0 +1,35 @@
+.navbar-brand {
+	font-weight: bold;
+}
+
+
+/* ----- LOGIN ELEMENTS ----- */
+
+.fget-pword-link {
+	float:right; 
+	font-size: 80%; 
+	font-weight: normal !important;
+	position: relative; 
+	text-decoration: none !important;	
+}
+
+.login-main-slider {
+	margin: 100px;
+}
+
+.login-loginbox {
+	margin-top: 50px;
+}
+
+.login-errormsg {
+	color: red; 
+	text-shadow: 1px 1px 0px #000000;	
+}
+
+.login-panel-body {
+	padding-top: 30px;
+}
+
+.panel-title {
+	font-weight: bold;
+}
