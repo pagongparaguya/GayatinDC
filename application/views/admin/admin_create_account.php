@@ -9,15 +9,24 @@
 				  		
 						  		<div class="personal-inf">
 						  			<span><h5>Personal Information</h5></span>
-						  			<input class="form-control" name="fname" type="text" placeholder="First Name" required/><br>
-						  			<input class="form-control" name="lname" type="text" placeholder="Last Name" required/><br>
+						  			<label for="admin-fname">First Name</label>
+						  			<input id="admin-fname" class="form-control" name="fname" type="text" required/><br>
+						  			
+									<label for="admin-lname">Last Name</label>
+						  			<input id="admin-lname" class="form-control" name="lname" type="text" required/><br>
 						  		</div>
 						
 						  		<div class="account-inf">
 						  			<span><h5>Account Information</h5></span>
-						  			<input class="form-control" name="username" type="text" placeholder="Username" required/><br>
-						  			<input id="pass" class="form-control" name="password" type="password" placeholder="Password" required/><br>
-						  			<input id="cpass" class="form-control" name="confirm_password" type="password" placeholder="Confirm password" required/><br>
+
+						  			<label for="username">Username</label>
+						  			<input id="username" class="form-control" name="username" type="text" required/><br>
+						  			
+									<label for="pass">Password</label>
+						  			<input id="pass" class="form-control" name="password" type="password" required/><br>
+						  			
+									<label for="cpass">Confirm Password</label>
+						  			<input id="cpass" class="form-control" name="confirm_password" type="password" required/><br>
 						  		</div>
 								<button id="sub" type="submit" class="btn btn-success">SUBMIT</button>
 							</form>

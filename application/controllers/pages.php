@@ -19,12 +19,11 @@ class Pages extends CI_Controller{
 	}
 
 	public function clinic_sched(){
-		$this->load->view('clinic_sched');
+		$this->load->view('schedule/schedule_clinic');
 	}
 
 	public function add_appointment(){
-		$this->load->view('add_appointment');
+		$this->load->view('appointment/appointment_add');
 	}
-
 
 }?>

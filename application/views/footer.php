@@ -1,12 +1,5 @@
-<!--     <footer id="footer" class="navbar navbar-inverse navbar-fixed-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <span style="color:white;">&copy;  Copyright 2014 - 2050 Gayatin Dental Clinic | All Rights Reserved.</span>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+    </div> <!-- Closing tag for the page-content div -->
+</div> <!-- Closing tag for the container div -->
 
 <script type="text/javascript">
     $(document).ready(function(){

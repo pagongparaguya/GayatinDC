@@ -1,10 +1,10 @@
 <?php $this->load->view('header', array('num' => 2, 'title' => 'Add New Patient')); ?>
 	<legend>Add New Profile</legend>
-		<center><span style="color:red;"><?php echo $message;?></span></center>
+		<center><span style="color:red;"><?php echo $message;?></span></center><br><br>
 
 		<form method="post" action="<?php echo base_url();?>cadmin/add_patient" role="form">
 		<div class="row clearfix">
-  		<div class="col-lg-6 columns">
+  		<div class="col-md-6 columns">
   			<span>	<h4>Personal Information</h4></span>
   			
   			<label for="profile-fname">First Name</label>
@@ -25,24 +25,27 @@
   			<label for="profile-mobile">Mobile Number</label>
   			<input id="profile-mobile" class="form-control" name="mno" type="text" pattern="[0][9][0-9]{9}" required/><br>
 			
-				<div class="col-lg-3 columns">
-					<label for="profile-gender">Gender</label>
-					<select id="profile-gender"class="form-control" name="gender" required>
-							          <!-- <option value="" disabled default selected style="display:none;">Gender</option> -->
-							          <option value="Male">Male</option>
-							          <option value="Female">Female</option>
-							        </select><br>
-				</div>
+			<div class="col-md-6 columns">
+				<label for="profile-gender">Gender</label>
+				<select id="profile-gender"class="form-control" name="gender" required>
+		          <!-- <option value="" disabled default selected style="display:none;">Gender</option> -->
+		          <option value="Male">Male</option>
+		          <option value="Female">Female</option>
+		        </select><br>
+			</div>
+
+			<div class="col-md-6 columns">
+				<label for="profile-mstatus">Marital Status</label>
+				<select id="profile-mstatus" class="form-control" name="mstat" required>
+		          <!-- <option value="" disabled default selected style="display:none;">Marital Status</option> -->
+		          <option value="Single">Single</option>
+		          <option value="Married">Married</option>
+		        </select>
+			</div>
 			
-				<div class="col-lg-3 columns">
-					<label for="profile-mstatus">Marital Status</label>
-					<select id="profile-mstatus" class="form-control" name="mstat" required>
-							          <!-- <option value="" disabled default selected style="display:none;">Marital Status</option> -->
-							          <option value="Single">Single</option>
-							          <option value="Married">Married</option>
-							        </select>
-				</div>
-			<br><br><br><br>
+  		</div>
+		
+  		<div class="col-md-6 columns">
   			<span><h4>Work Information</h4></span>
 
   			<label for="profile-oaddress">Office Address</label>
@@ -51,39 +54,38 @@
   			<label for="profile-otel">Telephone Number</label>
   			<input id="profile-otel" class="form-control" name="otno" type="text" /><br>
   		</div>
+	</div>
+	<br><br>
+
+	<div class="row">
 		
-		<div class="col-lg-6 columns">
+		<div class="col-md-6 columns">
 			<span><h4>Dental Information</h4></span>
 
-			<div class="col-lg-6 columns">
-				<label for="profile-occ">OCCLUSION</label>
-				<select id="profile-occ" class="form-control" name="occ" required>
-						        <!-- <option value="" disabled default selected style="display:none;">OCCLUSION</option> -->
-						        <option value="Class I">Class I</option>
-						        <option value="Class II (Div.1)">Class II (Div.1)</option>
-						        <option value="Class II (Div.2)">Class II (Div.2)</option>
-						        <option value="Class III">Class III</option>
-						        <option value="None">None</option>
-						     </select><br>
-			</div>
+			<label for="profile-occ">OCCLUSION</label>
+			<select id="profile-occ" class="form-control" name="occ" required>
+		        <!-- <option value="" disabled default selected style="display:none;">OCCLUSION</option> -->
+		        <option value="Class I">Class I</option>
+		        <option value="Class II (Div.1)">Class II (Div.1)</option>
+		        <option value="Class II (Div.2)">Class II (Div.2)</option>
+		        <option value="Class III">Class III</option>
+		        <option value="None">None</option>
+		     </select><br>
 
-		    <div class="col-lg-6 columns">
-		    	<label for="profile-pc">Periodontal Condition</label> 
-		    				<select id="profile-pc" class="form-control" name="perdon" required>
-		    	    <!-- <option value="" disabled default selected style="display:none;">Periodontal Condition</option> -->
-		    	    <option value="Normal">Normal</option>
-		    	    <option value="With Periodontal Problem">With Periodontal Problem</option>
-		    	 </select><br>
-		    </div>
+		    <label for="profile-pc">Periodontal Condition</label> 
+			<select id="profile-pc" class="form-control" name="perdon" required>
+		        <!-- <option value="" disabled default selected style="display:none;">Periodontal Condition</option> -->
+		        <option value="Normal">Normal</option>
+		        <option value="With Periodontal Problem">With Periodontal Problem</option>
+		     </select><br>
 
-		    <div class="col-lg-6 columns">
-		    	<label for="profile-oh">Oral Hygiene</label>  
-		    	  			<select id="profile-oh" class="form-control" name="orhy" required>
-		    	    <!-- <option value="" disabled default selected style="display:none;">Oral Hygiene</option> -->
-		    	    <option value="Good">Good</option>
-		    	    <option value="Poor">Poor</option>
-		    	 </select><br>
-		    </div>
+		    <label for="profile-oh">Oral Hygiene</label>  
+  			<select id="profile-oh" class="form-control" name="orhy" required>
+		        <!-- <option value="" disabled default selected style="display:none;">Oral Hygiene</option> -->
+		        <option value="Good">Good</option>
+		        <option value="Poor">Poor</option>
+		     </select><br>
+  		</div>
 
   		<!-- <div class="col-md-6 columns">
 			<span><h4>Denture</h4></span>
@@ -98,62 +100,51 @@
   				<input class="form-control" name="lsince" disabled type="text" placeholder="Since" /><br>
 			</div>
 		</div> -->
-		   
-		   <div class="col-lg-6 columns">
-  				<label for="profile-hob">Previous History of Bleeding</label>
-  				<select id="profile-hob" class="form-control" name="phb" required>
-  						        <!-- <option value="" disabled default selected style="display:none;">Previous History of Bleeding</option> -->
-  						        <option value="Yes">Yes</option>
-  						        <option value="No">No</option>
-  						     </select><br>
-  			</div>	
-	<br><br>
-		<div id="dtcon">
-  			
-
-  			<div class="col-lg-6 columns">
-  				<label for="profile-bp">Blood Pressure</label>
-  				<input id="profile-bp" class="form-control" name="bp" type="text" /><br>
-  			</div>
-  			<div class="col-lg-12 columns"></div>
-
-  			
-  				<div class="col-lg-4 columns">
-  					<label for="add_chrail">Chronic Ailments</label><br />
-  					<div id="ca1">
-  						<button id="add_chrail"  type="button" class="btn btn-info">Add Chronic Ailments</button>        
-  						<button id="rmv_chrail" type="button" class="btn btn-danger">Remove</button>
-  					</div><br>
-  				</div>
-  				
-  				<div class="col-lg-4 columns">
-  					<label for="add_drugs">Drugs Taken</label>
-  						  			<div id="dt1">
-  						  				<button id="add_drugs" type="button" class="btn btn-info">Add Drugs Taken</button>       
-  						  				<button id="rmv_drugs" type="button" class="btn btn-danger">Remove</button>
-  						  			</div>
-  				</div>
-  				  		</div>
-  				  		<div id="alcon">  			
-  				<div class="col-lg-4 columns">
-  					<label for="add_allergy">Allergies</label><br />
-  					<div id="al1">
-  						<button id="add_allergy" type="button" class="btn btn-info">Add Allergy </button>        
-  									<button id="rmv_allergy" type="button" class="btn btn-danger">Remove</button>
-  					</div>
-  				</div>
-  						</div>
-  						
-  			</div>
 	
+	</div>
+	<br><br>
+	<div class="row">
+		<div id="dtcon" class="col-md-6 columns">
+  			<label for="profile-hob">Previous History of Bleeding</label>
+  			<select id="profile-hob" class="form-control" name="phb" required>
+		        <!-- <option value="" disabled default selected style="display:none;">Previous History of Bleeding</option> -->
+		        <option value="Yes">Yes</option>
+		        <option value="No">No</option>
+		     </select><br>
+
+  			<label for="profile-bp">Blood Pressure</label>
+  			<input id="profile-bp" class="form-control" name="bp" type="text" /><br>
+
+  			<label for="add_chrail">Chronic Ailments</label><br />
+  			<div id="ca1">
+  				<button id="add_chrail"  type="button" class="btn btn-info">Add Chronic Ailments</button>       
+  				<button id="rmv_chrail" type="button" class="btn btn-danger">Remove</button>
+  			</div><br>
+  			
+  			<label for="add_drugs">Drugs Taken</label>
+	  			<div id="dt1">
+	  				<button id="add_drugs" type="button" class="btn btn-info">Add Drugs Taken</button>       
+	  				<button id="rmv_drugs" type="button" class="btn btn-danger">Remove</button>
+	  			</div>
+  		</div>
+  		<div id="alcon" class="col-md-6 columns">  			
+  			<label for="add_allergy">Allergies</label><br />
+  			<div id="al1">
+  				<button id="add_allergy" type="button" class="btn btn-info">Add Allergy </button>       
+				<button id="rmv_allergy" type="button" class="btn btn-danger">Remove</button>
+  			</div>
+		</div>
+		<div class="row clearfix">
 			<div class="col-md-12 columns">
 				<hr />
-				<div>
+				<div class="col-md-6 columns">
 					<button type="submit" class="btn btn-success">SUBMIT</button>
 				</div>
 			</div>
-	
+		</div>
 	</div>
+
+	
 	</form>
 
 <?php $this->load->view('footer'); ?>
