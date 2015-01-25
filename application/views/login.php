@@ -10,7 +10,7 @@
 
   <body>
           <section id="main-slider" class="login-main-slider">
-            <div id="loginbox" class="login-loginbox mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div id="loginbox" class="login-loginbox mainbox col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0">                    
                     <div class="panel panel-info" >
                             <div class="panel-heading">
                                 <div class="panel-title">
@@ -20,7 +20,7 @@
                                 
                             </div>   
                             
-                            <center><span class="login-errormsg"><?php echo $message;?></span></center>
+                            <span class="login-errormsg"><?php echo $message;?></span>
                             <div class="panel-body login-panel-body" >
 
                                 <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>

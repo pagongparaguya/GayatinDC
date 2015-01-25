@@ -2,7 +2,7 @@
 <div class="col-md-12 col-lg-12 columns">
 				<div class="col-md-4 col-lg-3 columns"></div>
 				<div class="col-md-4 col-sm-12 col-lg-6 columns">					
-						<div class="element-container">
+						<div class="element-container nomargin-element-container">
 							<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
 							        <thead>
 							            <tr>
@@ -93,8 +93,7 @@
 						          <option value="old">Old Patient</option>
 						          <option value="new">New Patient</option>
 						        </select><br>
-						        
-						        <button type="submit" class="btn btn-success">SUBMIT</button>
+						        <button type="submit" class="btn btn-success">SUBMIT</button>						        
 							</div>
 					   </form>						
 				</div>

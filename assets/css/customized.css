@@ -8,8 +8,22 @@ body {
 
 /* THE NAVBAR CONTAINER */
 	.navbar-default {
-		background-color: rgba(194, 120, 152, 0.8);
+		background-color: rgba(175, 96, 130, 0.95);
 		border-color: #C27898;
+		height: 57px;
+		margin: 1px 0;
+		padding: 2.5px 0;
+	}
+	
+	/* A DROPDOWN MENU*/
+	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+		background-color: #C27898;
+		color: #ffffff;	
+	}
+
+	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+		color: #ffffff;
+		background-color: #C27898;
 	}
 
 	/* TOGGLED NAVBAR - SMALL SCREENS*/
@@ -25,12 +39,17 @@ body {
 		background-color: #ffffff;
 	}
 
-	/* THE LOGO */
+	/* LOGO AREA */
 	.navbar-default .navbar-brand {
 		color: #ffffff;
 		font-weight: bold;
 		font-size: 150%;
 	}
+
+	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+		color: #ffffff;
+		font-size: 155%;
+	}	
 
 	/* ANCHOR ELEMENTS*/
 	.navbar-default .navbar-nav>li>a {
@@ -42,7 +61,7 @@ body {
 
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 		color: 	#ffffff;
-		border-bottom: 1px solid #ffffff;
+		border-bottom: 2px solid #ffffff;
 	}
 
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -85,22 +104,12 @@ body {
 /* ----- CONTAINERS ----- */
 
 .page-container {
-	margin: 60px auto 10px auto;
+	margin: 70px auto 10px auto;
 }
 
 .page-content {
-	/*margin: 65px 20px auto;*/
 	padding: 10px;
 	background-color: none;
-
-	/*border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-
-	-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	z-index: 999999;*/	
 }
 
 .element-container {
@@ -176,6 +185,10 @@ body {
 	font-weight: bold;
 }
 
+.panel-info {
+	border: none;
+}
+
 /* ----- ABOUT US PAGE ----- */
 
 .about-us-content {
@@ -203,7 +216,7 @@ body {
 }
 
 .panel-heading {
-	text-align: center;
+	text-align: left;
 	color: #ffffff !important;
 	font-weight: bold;
 	font-size: 110%;
@@ -216,5 +229,20 @@ body {
 
 .panel-body {
 	text-align: center;
+}
+
+.panel-info>.panel-heading {
+	border: none;
+}
+
+/* ----- PATIENT PROFILE VIEW ----- */
+.pprofile-name {
+	color: 	#ffffff;
+	font-weight: bold;
+}
+
+/* ----- FOR PAGES WHICH USE element-container(to remove the top margin) ----- */
+.nomargin-element-container {
+	margin: 0;
 }
 
