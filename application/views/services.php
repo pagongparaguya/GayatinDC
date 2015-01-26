@@ -1,8 +1,8 @@
 <?php $this->load->view('header', array('num' => 6, 'title' => 'SERVICES')); ?>
    
 <div class="about-us-content col-sm-12 col-md-12 col-lg-12 columns ">
-        <div class="col-md-1 col-lg-3 columns"></div>
-        <div class="col-sm-12 col-md-10 col-lg-6 columns">
+        <div class="col-md-3 col-lg-3 columns"></div>
+        <div class="col-sm-12 col-md-6 col-lg-6 columns">
                   <div class="panel panel-default frame about-us-frame">
                       <div class="panel-heading">                           
                            <span>GENERAL</span>
@@ -83,6 +83,6 @@
                       </div>
                   </div>
           </div>
-          <div class="col-md-1 col-lg-3 columns"></div>      
+          <div class="col-md-3 col-lg-3 columns"></div>      
 </div>
     

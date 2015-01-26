@@ -21,7 +21,7 @@
                            <span>Visit Our Clinic</span>
                       </div>
                       <div class="panel-body">
-                            Subangdako, Mandaue City, Cebu
+                            LK Building Subangdaku, Mandaue City, Cebu
                       </div>
                   </div>
                   
@@ -49,9 +49,7 @@
                               <p>(on school days)</p>
                               <p>9:00am - 5:00pm</p>
                               <p>(on summer)</p>
-                          
-                      
-                          
+                              <br />
                               <p class="italicized">Saturday</p>
                               <p>9:00am - 5:00pm</p>
                           
