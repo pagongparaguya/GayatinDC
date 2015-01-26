@@ -148,6 +148,35 @@ class Gayatin_model extends CI_Model{
 		}
 	}
 
+	public function check_otherstaff($data){
+		$id = $data['id'];
+		$fname = $data['firstname'];
+		$lname = $data['lastname'];
+		$query = $this->db->query("SELECT * FROM (`user`) WHERE `id` != $id AND `firstname` = '$fname' AND `lastname` = '$lname'");
+		// $this->db->where(array('firstname'=>$data['firstname'], 'lastname'=>$data['lastname'], 'id!'=>$data['id']));
+		// $query = $this->db->get('user');
+		if($query->num_rows()>0){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
+
+	public function check_otherusername($data){
+		$id = $data['id'];
+		$uname = $data['username'];
+		$query = $this->db->query("SELECT * FROM (`user`) WHERE `id` != $id AND `username` = '$uname'");
+		// $this->db->where(array('username'=>$data['username'], 'id!'=>$data['id']));
+		// $query = $this->db->get('user');
+		if($query->num_rows()>0){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
+
 	public function get_staffs($id){
 		$res = $this->db->query("SELECT * FROM (`user`) WHERE `id` != $id");
 		return $res->result();

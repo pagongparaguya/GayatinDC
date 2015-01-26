@@ -9,7 +9,7 @@
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Username</th>
+                <th>Contact No.</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -31,52 +31,8 @@
       </table>
       <a href="<?php echo base_url();?>cadmin/new_staff"><button id="add" type="button" class="btn btn-info">Add New Staff</button></a>
 
-
-      <!-- <div id="stfmod" class="modal fade bs-example-modal-lg">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content" style="background-color: #e7e5e3;">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  </div>
-                      <div id="timediv" class="modal-body">
-                           <div class="col-md-12 columns">            
-                  <div class="col-md-3 columns"></div>
-                  <div class="col-md-6 columns">
-                    <legend>Create Admin Account</legend> 
-                    <form method="post" action="<?php echo base_url();?>cadmin/add_patient" role="form">
-                    
-                        <div>
-                          <span><h5>Personal Information</h5></span>
-                          <input class="form-control" name="fname" type="text" placeholder="First Name" required/><br>
-                          <input class="form-control" name="lname" type="text" placeholder="Last Name" required/><br>
-                        </div>
-                  
-                        <div >
-                          <span><h5>Account Information</h5></span>
-                          <input class="form-control" name="username" type="text" placeholder="Username" required/><br>
-                          <input class="form-control" name="password" type="text" placeholder="Password" required/><br>
-                          <input class="form-control" name="confirm_password" type="text" placeholder="Confirm password" required/><br>
-                        </div>  
-                      <button type="submit" class="btn btn-info">SUBMIT</button>
-                    </form>
-                  </div>
-                  <div class="col-md-3"></div>
-                </div>
-                      </div>
-                 <div class="modal-footer">
-                    <br><br>
-                </div>
-               </div>
-          </div>
-      </div>  -->
-
-
-
-      <!-- </div>
-      </div> -->
     </section>
     <?php $this->load->view('footer'); ?>
-      <br><br><br><br><br>
 
     <script type="text/javascript">
     $(document).ready(function() {

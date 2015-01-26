@@ -28,7 +28,7 @@
 				<div class="col-lg-3 columns">
 					<label for="profile-gender">Gender</label>
 					<select id="profile-gender"class="form-control" name="gender" required>
-							          <!-- <option value="" disabled default selected style="display:none;">Gender</option> -->
+							          <option value="" disabled default selected style="display:none;"></option>
 							          <option value="Male">Male</option>
 							          <option value="Female">Female</option>
 							        </select><br>
@@ -37,7 +37,7 @@
 				<div class="col-lg-3 columns">
 					<label for="profile-mstatus">Marital Status</label>
 					<select id="profile-mstatus" class="form-control" name="mstat" required>
-							          <!-- <option value="" disabled default selected style="display:none;">Marital Status</option> -->
+							          <option value="" disabled default selected style="display:none;"></option>
 							          <option value="Single">Single</option>
 							          <option value="Married">Married</option>
 							        </select>
@@ -58,7 +58,7 @@
 			<div class="col-lg-6 columns">
 				<label for="profile-occ">OCCLUSION</label>
 				<select id="profile-occ" class="form-control" name="occ" required>
-						        <!-- <option value="" disabled default selected style="display:none;">OCCLUSION</option> -->
+						        <option value="" disabled default selected style="display:none;"></option>
 						        <option value="Class I">Class I</option>
 						        <option value="Class II (Div.1)">Class II (Div.1)</option>
 						        <option value="Class II (Div.2)">Class II (Div.2)</option>
@@ -70,7 +70,7 @@
 		    <div class="col-lg-6 columns">
 		    	<label for="profile-pc">Periodontal Condition</label> 
 		    				<select id="profile-pc" class="form-control" name="perdon" required>
-		    	    <!-- <option value="" disabled default selected style="display:none;">Periodontal Condition</option> -->
+		    	    <option value="" disabled default selected style="display:none;"></option>
 		    	    <option value="Normal">Normal</option>
 		    	    <option value="With Periodontal Problem">With Periodontal Problem</option>
 		    	 </select><br>
@@ -79,7 +79,7 @@
 		    <div class="col-lg-6 columns">
 		    	<label for="profile-oh">Oral Hygiene</label>  
 		    	  			<select id="profile-oh" class="form-control" name="orhy" required>
-		    	    <!-- <option value="" disabled default selected style="display:none;">Oral Hygiene</option> -->
+		    	    <option value="" disabled default selected style="display:none;"></option>
 		    	    <option value="Good">Good</option>
 		    	    <option value="Poor">Poor</option>
 		    	 </select><br>
@@ -102,7 +102,7 @@
 		   <div class="col-lg-6 columns">
   				<label for="profile-hob">Previous History of Bleeding</label>
   				<select id="profile-hob" class="form-control" name="phb" required>
-  						        <!-- <option value="" disabled default selected style="display:none;">Previous History of Bleeding</option> -->
+  						        <option value="" disabled default selected style="display:none;"></option>
   						        <option value="Yes">Yes</option>
   						        <option value="No">No</option>
   						     </select><br>

@@ -2,7 +2,8 @@
 		<div class="row" style="margin-top: 80px">
 	  		<div class="col-md-12 columns">
 	  						<div class="col-md-3 columns"></div>
-	  						<div class="col-md-6 columns">					
+	  						<div class="col-md-6 columns">	
+
 	  								<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
 	  								        <thead>
 	  								            <tr>

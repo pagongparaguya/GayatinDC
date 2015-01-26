@@ -4,11 +4,11 @@
 						<div class="col-md-3 columns"></div>
 						<div class="col-md-6 columns">
 							<legend>Create Admin Account</legend>
-							<center><span style="color:red;"><?php echo $message;?></span></center><br><br>	
+							<center><span style="color:red;" id="message"></span></center><br>
 							<form method="post" action="<?php echo base_url();?>cadmin/add_staff" role="form">
 				  		
 						  		<div class="personal-inf">
-						  			<span><h5>Personal Information</h5></span>
+						  			<span><h4>#Personal Information</h4></span>
 						  			<label for="admin-fname">First Name</label>
 						  			<input id="admin-fname" class="form-control" name="fname" type="text" required/><br>
 						  			
@@ -17,7 +17,7 @@
 						  		</div>
 						
 						  		<div class="account-inf">
-						  			<span><h5>Account Information</h5></span>
+						  			<span><h4>#Account Information</h4></span>
 
 						  			<label for="username">Username</label>
 						  			<input id="username" class="form-control" name="username" type="text" required/><br>
@@ -28,7 +28,7 @@
 									<label for="cpass">Confirm Password</label>
 						  			<input id="cpass" class="form-control" name="confirm_password" type="password" required/><br>
 						  		</div>
-								<button id="sub" type="submit" class="btn btn-success">SUBMIT</button>
+								<button id="sub" type="submit" class="btn btn-lg btn-success">SUBMIT</button>
 							</form>
 						</div>
 						<div class="col-md-3"></div>
@@ -39,6 +39,23 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.datepicker').datepicker();	
+		$('#sub').click(function(event){
+			if($('#pass').val()!=$('#cpass').val()){
+				alert('Password / Confirm Password dont match');
+				event.preventDefault();
+			}
+
+			// $.getJSON("<?php echo base_url();?>cadmin/check_username/",{username:$("#username").val()},success=function(data){
+	  //       if(data=="1"){
+	  //         $("#notif").html("");
+	  //         $('#editProfileModal').foundation('reveal', 'open');
+	  //       }else{
+	  //         $("#notif").html("Wrong Answer!");
+	  //       }
+	  //     });
+
+		});
+
 		// $('#sub').click(function(){
 		// 	if($('#pass').val()!=$('#cpass').val()){
 	 //            alert("Password/Confirm Password Doesn't Match");
