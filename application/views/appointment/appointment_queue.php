@@ -1,5 +1,5 @@
 <?php $this->load->view('header', array('num' => 1, 'title' => 'Appointment Queue')); ?>
-<section id="main-slider" style="margin:100px;">
+<div class="element-container">
     <legend>Pending Appointment Date</legend>
     <span id="message" style="color:red"></span>
     
@@ -49,7 +49,7 @@
         </tbody>
       </table>
       </div>
-</section>
+</div>
 <?php $this->load->view('footer'); ?>
 <script type="text/javascript">
     $(document).ready(function() {

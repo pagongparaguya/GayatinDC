@@ -137,7 +137,7 @@
 				//NOTHING
 			}
 			else{
-				alert('Agree plzzz');
+				alert('Agree to Terms to proceed.');
 				event.preventDefault();
 			}
 		});

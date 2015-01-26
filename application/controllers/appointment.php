@@ -62,6 +62,7 @@ class Appointment extends CI_Controller{
 	public function view_appointment_queue_time($date){
 		if($this->session->userdata('username')){
 			$data['time_reservations'] = $this->gayatin_appointment_model->get_pending_appointment_time($date);
+			$data['date']=$date;
 			$this->load->view('appointment/appointment_queue_time',$data);
 		}
 		else{
@@ -70,4 +71,15 @@ class Appointment extends CI_Controller{
 		}
 	}
 
+	public function accept_appointment($id){
+		if($this->session->userdata('username')){
+			$this->gayatin_appointment_model->add_appointment($id);
+			echo "<script>alert('Appointment successfully updated.');</script>";
+			echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
+		}
+		else{
+			echo "<script>alert('Login is required.');</script>";
+			echo "<meta http-equiv=Refresh content=0;url=../cadmin>";
+		}
+	}
 }

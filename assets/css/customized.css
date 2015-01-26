@@ -6,48 +6,124 @@ body {
 
 /* ----- NAVBAR ELEMENTS ----- */
 
-.navbar-brand {
-	font-weight: bold;
-}
-
-@media (max-width: 768px) {
+/* THE NAVBAR CONTAINER */
+	.navbar-default {
+		background-color: rgba(175, 96, 130, 0.95);
+		border-color: #C27898;
+		height: 57px;
+		margin: 1px 0;
+		padding: 2.5px 0;
+	}
 	
-	.navbar-brand {
-		padding: 15px 5px;
+	/* A DROPDOWN MENU*/
+	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+		background-color: #C27898;
+		color: #ffffff;	
 	}
 
-	.navbar-toggle {
-		margin-right: 5px !important;
+	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+		color: #ffffff;
+		background-color: #C27898;
+	}
+
+	/* TOGGLED NAVBAR - SMALL SCREENS*/
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: rgba(255, 255, 255, 0.36);
+	}
+
+	.navbar-default .navbar-toggle {
+		border: none;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #ffffff;
+	}
+
+	/* LOGO AREA */
+	.navbar-default .navbar-brand {
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 150%;
+	}
+
+	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+		color: #ffffff;
+		font-size: 155%;
 	}	
 
-}
+	/* ANCHOR ELEMENTS*/
+	.navbar-default .navbar-nav>li>a {
+		color: #ffffff;
+	}
+		.nav>li>a {
+				padding: 15px 15px;
+		}
 
-.navbar-default {
-	background-color: #f8f8f8;
-	-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	z-index: 999999;
-}
+	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+		color: 	#ffffff;
+		border-bottom: 2px solid #ffffff;
+	}
 
-/* ----- PAGE CONTAINERS ----- */
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+		background-color: rgba(255, 255, 255, 0.19);
+		color: 	#ffffff;
+	}
+
+	/* DIFFERENT MEDIA QUERIES */
+	@media (max-width: 768px) {
+		.navbar-brand {
+			padding: 15px 5px;
+			margin-left: 15px;
+		}		
+	}
+
+	@media (min-width: 634px) and (max-width: 768px) {
+		.navbar-toggle {
+			margin-right: 15px;
+		}
+	}
+
+	@media (min-width: 259px) and (max-width: 280px) {
+		.navbar-brand {
+			font-size: 145% !important;
+		}
+	}
+
+	@media (min-width: 259px) {
+		.page-content {
+			padding: 0 !important;
+		}
+	}
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		padding: 0 2px !important;
+	}
+
+/* ----- THE END OF NAVBAR ELEMENTS ----- */
+
+/* ----- CONTAINERS ----- */
 
 .page-container {
-	margin: 60px auto 10px auto;
+	margin: 70px auto 10px auto;
 }
 
 .page-content {
-	/*margin: 65px 20px auto;*/
+	padding: 10px;
+	background-color: none;
+}
+
+.element-container {
 	padding: 10px;
 	background-color: #ffffff;
+	margin: 15px 0;
 
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 
-	-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	-moz-box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.16);
+	box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.16);
 	z-index: 999999;	
 }
 
@@ -72,9 +148,9 @@ body {
 	
 	padding: 8px;
 
-	-webkit-box-shadow: 1px 2px 1px #d1d1d1;
-	-moz-box-shadow: 1px 2px 1px #d1d1d1;
-	box-shadow: 1px 2px 1px #d1d1d1;	
+	-webkit-box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.16);
+	-moz-box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.16);
+	box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.16);	
 }
 
 
@@ -107,6 +183,10 @@ body {
 
 .panel-title {
 	font-weight: bold;
+}
+
+.panel-info {
+	border: none;
 }
 
 /* ----- ABOUT US PAGE ----- */
@@ -149,5 +229,20 @@ body {
 
 .panel-body {
 	text-align: center;
+}
+
+.panel-info>.panel-heading {
+	border: none;
+}
+
+/* ----- PATIENT PROFILE VIEW ----- */
+.pprofile-name {
+	color: 	#ffffff;
+	font-weight: bold;
+}
+
+/* ----- FOR PAGES WHICH USE element-container(to remove the top margin) ----- */
+.nomargin-element-container {
+	margin: 0;
 }
 

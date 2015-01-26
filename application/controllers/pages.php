@@ -26,4 +26,8 @@ class Pages extends CI_Controller{
 		$this->load->view('appointment/appointment_add');
 	}
 
+	public function services(){
+		$this->load->view('services');
+	}
+
 }?>
