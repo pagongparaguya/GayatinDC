@@ -31,7 +31,7 @@ class Cadmin extends CI_Controller{
 		}
 		else if(!$this->session->userdata('username') && $this->input->post('user')){
 		$user=$this->input->post('user');
-		$pass=$this->input->post('pass');
+		$pass=md5($this->input->post('pass'));
 		$result=$this->gayatin_model->login_check($user,$pass);
 			if(!empty($result)){
 				$this->session->set_userdata('username',$user);
@@ -166,6 +166,7 @@ class Cadmin extends CI_Controller{
 						$this->gayatin_model->add_drugstaken($adt);
 					}
 				}
+				echo "<script>alert('Successfully added.');</script>";
 				redirect('cadmin/view_patients');
 			}
 			else{
@@ -263,6 +264,7 @@ class Cadmin extends CI_Controller{
 						$this->gayatin_model->add_drugstaken($adt);
 					}
 				}
+				echo "<script>alert('Successfully updated.');</script>";
 				redirect('cadmin/view_patients');
 			}
 		else{
@@ -294,8 +296,7 @@ class Cadmin extends CI_Controller{
 	{
 		if($this->session->userdata('username')){
 			if($this->session->userdata('handler')){
-				$data['message']='';
-				$this->load->view('admin/admin_create_account',$data);
+				$this->load->view('admin/admin_create_account');
 			}else{
 				echo "<script>alert('Forbidden Access.');</script>";
 				echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
@@ -306,23 +307,29 @@ class Cadmin extends CI_Controller{
 		}
 	}
 
+	public function check_username(){
+			$chck = $this->gayatin_model->check_username($this->input->post("username",true));
+			echo $chck;
+	}
+
 	public function add_staff()
 	{
 		if($this->session->userdata('username')){
 			if($this->session->userdata('handler') && $this->input->post("fname")!=""){
-				$pass = mysql_real_escape_string($this->input->post('password'));
-				$cpass = mysql_real_escape_string($this->input->post('confirm_password'));
+				$pass = md5(mysql_real_escape_string($this->input->post('password')));
+				$cpass = md5(mysql_real_escape_string($this->input->post('confirm_password')));
 				if($pass == $cpass){
 					$data =  array('firstname' => mysql_real_escape_string($this->input->post("fname")), 
 							'lastname' => mysql_real_escape_string($this->input->post("lname")),
 							'username' => mysql_real_escape_string($this->input->post("username")),
-							'password' => mysql_real_escape_string($this->input->post("password")),
+							'password' => md5(mysql_real_escape_string($this->input->post("password"))),
 							'type' => 1);
 					$chk = $this->gayatin_model->check_staff($data);
-					$chck = $this->gayatin_model->check_username($data);;
+					$chck = $this->gayatin_model->check_username($data);
 					if($chk == 0){ 
 						if($chck==0){
 							$id = $this->gayatin_model->add_user($data);
+							echo "<script>alert('Successfully added user.');</script>";
 							echo "<meta http-equiv=Refresh content=0;url=../cadmin/view_staffs>";
 						}else{
 							// $data['message']='Username already exists.';
@@ -373,31 +380,53 @@ class Cadmin extends CI_Controller{
 		if($this->session->userdata('username')){
 			if($this->session->userdata('handler')){
 				$sid = $this->input->post('staffid');
-				$op = mysql_real_escape_string($this->input->post('old_password'));
+				$op = md5(mysql_real_escape_string($this->input->post('old_password')));
 				$chk = $this->gayatin_model->check_password($op,$sid);
 				if($chk == 1){ 
-						if($this->input->post('password')){
-							$pass = mysql_real_escape_string($this->input->post('password'));
-							$cpass = mysql_real_escape_string($this->input->post('confirm_password'));
-							if($pass == $cpass){
-								$data = array('firstname'=>mysql_real_escape_string($this->input->post('fname')),
-									  'lastname'=>mysql_real_escape_string($this->input->post('lname')),
-									  'username'=>mysql_real_escape_string($this->input->post('username')),
-									  'password'=>$pass);
-								$this->gayatin_model->update_staff($data,$sid);
-								echo "<meta http-equiv=Refresh content=0;url=../cadmin/view_staffs>";
-							}else{
-								echo "<script>alert('Password/Confirm Password Doesnt Match.');</script>";
-								echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
+					$checking =  array('firstname' => mysql_real_escape_string($this->input->post("fname")), 
+							'lastname' => mysql_real_escape_string($this->input->post("lname")),
+							'username' => mysql_real_escape_string($this->input->post("username")),
+							'id' => $sid);
+					$chk = $this->gayatin_model->check_otherstaff($checking);
+					$chck = $this->gayatin_model->check_otherusername($checking);
+					if($chk == 0){ 
+						if($chck==0){
+							if($this->input->post('password')){
+								$pass = mysql_real_escape_string($this->input->post('password'));
+								$cpass = mysql_real_escape_string($this->input->post('confirm_password'));
+								if($pass == $cpass){
+									$data = array('firstname'=>mysql_real_escape_string($this->input->post('fname')),
+										  'lastname'=>mysql_real_escape_string($this->input->post('lname')),
+										  'username'=>mysql_real_escape_string($this->input->post('username')),
+										  'password'=>$pass);
+									$this->gayatin_model->update_staff($data,$sid);
+									echo "<script>alert('Successfully updated.');</script>";
+									echo "<meta http-equiv=Refresh content=0;url=../cadmin/view_staffs>";
+								}else{
+									echo "<script>alert('Password/Confirm Password Doesnt Match.');</script>";
+									echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
+								}
 							}
+							else{
+								$data = array('firstname'=>mysql_real_escape_string($this->input->post('fname')),
+										  'lastname'=>mysql_real_escape_string($this->input->post('lname')),
+										  'username'=>mysql_real_escape_string($this->input->post('username')));
+								$this->gayatin_model->update_staff($data,$sid);
+								echo "<script>alert('Successfully updated.');</script>";
+								echo "<meta http-equiv=Refresh content=0;url=../cadmin/view_staffs>";
+							}
+						}else{
+							// $data['message']='Username already exists.';
+							// $this->load->view('admin_create_account',$data);
+							echo "<script>alert('Username already Exists.');</script>";
+							echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
 						}
-						else{
-							$data = array('firstname'=>mysql_real_escape_string($this->input->post('fname')),
-									  'lastname'=>mysql_real_escape_string($this->input->post('lname')),
-									  'username'=>mysql_real_escape_string($this->input->post('username')));
-							$this->gayatin_model->update_staff($data,$sid);
-							echo "<meta http-equiv=Refresh content=0;url=../cadmin/view_staffs>";
-						}
+					}else{
+						// $data['message']='Duplicate Data';
+						// $this->load->view('admin_create_account',$data);
+						echo "<script>alert('Duplicate Data.');</script>";
+						echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
+					}
 				}
 				else{
 					echo "<script>alert('Please input your correct password .');</script>";
@@ -420,6 +449,7 @@ class Cadmin extends CI_Controller{
 			if($this->session->userdata('handler')){
 				$this->gayatin_model->delete_staff($id);
 				// echo "<meta http-equiv=Refresh content=0;url=../cadmin/view_staffs>";
+				echo "<script>alert('Successfully deleted.');</script>";
 				redirect('cadmin/view_staffs');
 			}
 			else{

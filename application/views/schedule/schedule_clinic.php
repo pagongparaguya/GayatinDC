@@ -1,4 +1,70 @@
 <?php $this->load->view('header', array('num' => 1, 'title' => 'Schedule Timeslots')); ?>
+<<<<<<< HEAD
+		<div class="row" style="margin-top: 80px">
+	  		<div class="col-md-12 columns">
+	  						<div class="col-md-3 columns"></div>
+	  						<div class="col-md-6 columns">	
+
+	  								<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+	  								        <thead>
+	  								            <tr>
+	  								                <th colspan="2" style="text-align: center; font-weight: bold; font-size: 150%">The Clinic Timeslots</th>
+	  								            </tr>
+	  								        </thead>
+	  								 
+	  								        <tbody style="text-align: center">						          
+	  								            <tr>					                
+	  								            	<td width="80%">7:30 - 8:30</td>
+	  								            	<td width="20%">
+	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
+	  								            	</td>
+	  								            </tr>
+	  								            <tr>					                
+	  								            	<td width="80%">8:30 - 9:30</td>
+	  								            	<td width="20%">
+	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
+	  								            	</td>
+	  								            </tr>
+	  								            <tr>					                
+	  								            	<td width="80%">9:30 - 10:30</td>
+	  								            	<td width="20%">
+	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
+	  								            	</td>
+	  								            </tr>
+	  								            <tr>					                
+	  								            	<td>10:30 - 11:30</td>
+	  								            	<td width="20%">
+	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
+	  								            	</td>
+	  								            </tr>
+	  								            <tr>					                
+	  								            	<td colspan="2">11:30 - 1:00  (LUNCH BREAK)</td>	  								            	
+	  								            </tr>
+	  								            <tr>					                
+	  								            	<td width="80%">1:00 - 2:00</td>
+	  								            	<td width="20%">
+	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
+	  								            	</td>
+	  								            </tr>
+	  								            <tr>					                
+	  								            	<td width="80%">2:00 - 3:00</td>
+	  								            	<td width="20%">
+	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
+	  								            	</td>
+	  								            </tr>						          
+	  								            <tr>					                
+	  								            	<td width="80%">3:00 - 4:00</td>
+	  								            	<td width="20%">
+	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
+	  								            	</td>
+	  								            </tr>
+	  								        </tbody>
+	  								      </table>
+	  						</div>
+	  						<div class="col-md-3 columns"></div>
+	  					</div>
+	  	</div>
+=======
 <div class="col-md-12 col-lg-12 columns">
 				<div class="col-md-4 col-lg-3 columns"></div>
 				<div class="col-md-4 col-sm-12 col-lg-6 columns">					
@@ -99,6 +165,7 @@
 				</div>
 				<div class="col-md-4 col-lg-3 columns"></div>
 </div>
+>>>>>>> 3ce87711355cdd3e3a786268fd33e49f928dedcd
 
 <?php $this->load->view('footer'); ?>
 <!--script type="text/javascript">
