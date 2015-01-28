@@ -56,7 +56,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Appointments<span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="<?php echo base_url();?>appointment/new_appointment">Issue an Appointment</a></li>
-                                         <li><a href="<?php echo base_url();?>appointment/view_appointments">View Appointments</a></li>
+                                         <li><a href="<?php echo base_url();?>appointment/view_upcoming_appointments">Upcoming Appointments</a></li>
                                         <li><a href="<?php echo base_url();?>appointment/view_appointment_queue">Pending Appointments</a></li>                  
                                     </ul>
                                 </li>
