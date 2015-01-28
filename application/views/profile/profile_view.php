@@ -3,8 +3,46 @@
 
 	<legend class="pprofile-name"><?php echo $prof->firstname;?> <?php echo $prof->middlename;?> <?php echo $prof->lastname;?></legend>
 			<div class="col-md-12 columns">
+				<button type="button" class="btn btn-info">View History of Appointments</button>
+				<button type="button" class="btn btn-info">Add an Appointment Record</button>
+			</div>
+			<div class="col-md-12 columns">
 				<div class="element-container">
-					<div class="personal-info">
+					<div class="panel panel-default frame about-us-frame">
+	                      <div class="panel-heading">                           
+	                           <span>Personal Information</span>
+	                      </div>
+	                      <div class="panel-body">
+	                            <p>Home Address: <?php echo $prof->address;?></p>
+	                            <p>Telephone Number: <?php echo $prof->telno;?></p>
+	                            <p>Mobile Number: <?php echo $prof->contactno;?></p>
+	                            <p>Marital Status: <?php echo $prof->maritalstatus;?></p>
+	                            <p>Sex: <?php echo $prof->gender;?></p>
+	                            <p>Age: 10</p>
+	                      </div>
+                  	</div>
+                  	<div class="panel panel-default frame about-us-frame">
+	                      <div class="panel-heading">                           
+	                           <span>Work Information</span>
+	                      </div>
+	                      <div class="panel-body">
+	                            <p>Office Address: <?php echo $prof->officeaddress;?></p>
+	                            <p>Telephone Number: <?php echo $prof->officetelno;?></p>
+	                      </div>
+                  	</div>
+                  	<div class="panel panel-default frame about-us-frame">
+	                      <div class="panel-heading">                           
+	                           <span>Dental Information</span>
+	                      </div>
+	                      <div class="panel-body">
+	                            <p>OCCLUSION: <?php echo $prof->occlusion;?></p>
+					  			<p>Periodontal Condition: <?php echo $prof->periodontalcondition;?></p>
+					  			<p>Oral Hygiene: <?php echo $prof->oralhygiene;?></p>
+					  			<p>Previous History of Bleeding: <?php echo $prof->prevhistoryofbleeding;?></p>
+						  		<p>Blood Pressure: <?php echo $prof->bloodpressure;?></p>
+	                      </div>
+                  	</div>
+					<!-- <div class="personal-info">
 						<span><h5>Personal Information</h5></span>
 							<ul class="pi-1st-set">
 								<li>Home Address: <?php echo $prof->address;?></li>
@@ -17,12 +55,12 @@
 								<li>Sex: <?php echo $prof->gender;?></li>
 								<li>Age: 10</li>
 							</ul>
-					</div>
-				</div>
-		
+					</div> -->
+				
+				</div>		
 			</div>
 	
-			<div class="col-md-12 columns">
+		<!-- 	<div class="col-md-12 columns">
 				<div class="element-container">
 					<div class="work-info">
 						<span><h5>Work Information</h5></span>
@@ -32,9 +70,9 @@
 							</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 	
-	<div class="col-md-12 columns">
+	<!-- <div class="col-md-12 columns">
 			<div class="element-container">
 					<span><h5>Dental Information</h5></span>
 					<div class="dental-info">					
@@ -62,7 +100,7 @@
 						  	</div>
 					</div>
 			</div>
-		</div>		
+		</div>		 -->
 	<?php endforeach;?>
 
 		<div class="col-md-12 columns">
@@ -134,11 +172,6 @@
 					</div>
 			</div>
 			<div class="col-md-3 columns"></div>
-		</div>
-		
-		<div class="col-md-12 columns">
-			<button type="button" class="btn btn-info">View History of Appointments</button>
-			<button type="button" class="btn btn-info">Add an Appointment Record</button>
 		</div>
 			<div class="col-md-6 columns">
 		<!-- <span><h5>Denture</h5></span>
