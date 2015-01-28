@@ -71,6 +71,18 @@ class Appointment extends CI_Controller{
 		}
 	}
 
+	public function view_upcoming_appointments_timeslots($date){
+		if($this->session->userdata('username')){
+			$data['time_reservations'] = $this->gayatin_appointment_model->get_pending_appointment_time($date);
+			$data['date']=$date;
+			$this->load->view('appointment/appointment_upcoming_timeslots',$data);
+		}
+		else{
+			echo "<script>alert('Login is required.');</script>";
+			echo "<meta http-equiv=Refresh content=0;url=../cadmin>";
+		}
+	}
+
 	public function accept_appointment($id){
 		if($this->session->userdata('username')){
 			$this->gayatin_appointment_model->add_appointment($id);
@@ -93,5 +105,16 @@ class Appointment extends CI_Controller{
 			echo "<script>alert('Login is required.');</script>";
 			echo "<meta http-equiv=Refresh content=0;url=../cadmin>";
 		}
+	}
+
+	public function view_upcoming_appointments(){
+		if($this->session->userdata('username')){
+			$data['dates'] = $this->gayatin_appointment_model->get_pending_appointment();
+			$this->load->view('appointment/appointment_upcoming',$data);
+		}
+		else{
+			echo "<script>alert('Login is required.');</script>";
+			echo "<meta http-equiv=Refresh content=0;url=../cadmin>";
+		}		
 	}
 }
