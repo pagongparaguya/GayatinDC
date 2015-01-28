@@ -30,6 +30,10 @@ class Pages extends CI_Controller{
 		$this->load->view('schedule/schedule_clinic');
 	}
 
+	public function clinic_timeslots(){
+		$this->load->view('schedule/schedule_timeslots');
+	}
+
 	public function add_appointment(){
 		$this->load->view('appointment/appointment_add');
 	}

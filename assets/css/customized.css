@@ -246,3 +246,19 @@ body {
 	margin: 0;
 }
 
+
+/* ----- MODAL ELEMENTS ----- */
+.modal-backdrop {
+	z-index: -10;
+}
+
+.modal-btn-grp {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+	margin: 10px 0;
+}
+
+	.modal-btn-grp li {
+		margin: 0 2px 0 0;
+	}

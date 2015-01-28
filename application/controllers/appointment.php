@@ -35,7 +35,7 @@ class Appointment extends CI_Controller{
 			echo "<meta http-equiv=Refresh content=0;url=../appointment/view_appointment_queue>";
 			}
 			else{
-				echo "<script>alert('Scheduled appointment should be a day prior to the schedule.');</script>";
+				echo "<script>alert('Scheduled appointment should be at least a day prior to the schedule.');</script>";
 				echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
 			}
 		}

@@ -43,16 +43,21 @@
                                 </li>
                                 
                                 <?php if($this->session->userdata('username')){?>
-                                <!-- <li class="<?php if($num == 1): ?>active<?php endif;?>">
+                                <li class="<?php if($num == 1): ?>active<?php endif;?>">
+                                    <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a> -->
                                     <a href="<?php echo base_url();?>pages/clinic_sched">Clinic Schedule</a>
-                                </li> -->
-                                <li class="dropdown <?php if($num == 1): ?>active<?php endif;?>">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a>
+                                  <!--   <ul class="dropdown-menu" role="menu">
+                                        <li><a href="<?php echo base_url();?>pages/clinic_sched">View Clinic Schedule</a></li>
+                                        <li><a href="<?php echo base_url();?>appointment/view_appointment_queue">View Appointment Queue</a></li>                  
+                                    </ul> -->
+                                </li>
+
+                                <li class="dropdown <?php if($num == 7): ?>active<?php endif;?>">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Appointments<span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="<?php echo base_url();?>pages/clinic_schedule">View Clinic Schedule</a></li>
                                         <li><a href="<?php echo base_url();?>appointment/new_appointment">Issue an Appointment</a></li>
                                          <li><a href="<?php echo base_url();?>appointment/view_appointments">View Appointments</a></li>
-                                        <li><a href="<?php echo base_url();?>appointment/view_appointment_queue">View Appointment Queue</a></li>                  
+                                        <li><a href="<?php echo base_url();?>appointment/view_appointment_queue">Pending Appointments</a></li>                  
                                     </ul>
                                 </li>
                 
@@ -65,7 +70,7 @@
                                 </li>
             
                                 <?php if($this->session->userdata('handler')){?>
-                                          <li class="<?php if($num == 5): ?>active<?php endif;?>"><a href="<?php echo base_url();?>cadmin/view_staffs">Admin Panel</a></li>
+                                          <li class="<?php if($num == 5): ?>active<?php endif;?>"><a href="<?php echo base_url();?>cadmin/view_staffs">Users</a></li>
                                       <?php }?>
                 
                                 <li id="logout" class="buzz-out"><a href="<?php echo base_url();?>cadmin/logout">Logout</a></li>
@@ -78,7 +83,7 @@
                                   <li class="dropdown <?php if($num == 3): ?>active<?php endif;?>">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
-                                    <li><a href="<?php echo base_url();?>pages/clinic_schedule">View Schedule</a></li>
+                                    <li><a href="<?php echo base_url();?>pages/clinic_sched">View Schedule</a></li>
                                         <li><a href="<?php echo base_url();?>appointment/new_appointment">Issue Appointment</a></li>
                                         <!-- <li><a href="<?php echo base_url();?>cadmin/view_patients">View Appointment Queue</a></li>  -->                      
                                     </ul>

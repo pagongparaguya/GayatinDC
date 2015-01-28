@@ -1,4 +1,4 @@
-<?php $this->load->view('header', array('num' => 1, 'title' => 'Appointment Queue')); ?>
+<?php $this->load->view('header', array('num' => 7, 'title' => 'Appointment Queue')); ?>
 <div class="element-container">
     <legend>Pending Appointment Date</legend>
     <span id="message" style="color:red"></span>
