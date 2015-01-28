@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2015 at 04:06 PM
+-- Generation Time: Jan 28, 2015 at 07:46 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -50,6 +50,53 @@ INSERT INTO `allergies` (`id`, `patientid`, `allergyname`) VALUES
 (13, 22, 'iro'),
 (14, 23, 'allergy1'),
 (15, 23, 'allergy1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `appointment`
+--
+
+CREATE TABLE IF NOT EXISTS `appointment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `middlename` varchar(50) NOT NULL,
+  `contactno` varchar(11) NOT NULL,
+  `patienttype` varchar(20) NOT NULL,
+  `date` varchar(20) NOT NULL,
+  `time` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `appointment`
+--
+
+INSERT INTO `appointment` (`id`, `firstname`, `lastname`, `middlename`, `contactno`, `patienttype`, `date`, `time`) VALUES
+(2, 'john', 'doe', 'asd', '123123', 'New Patient', '2015-01-27', '8:30 - 9:30 AM'),
+(3, 'qwe', 'qweq', 'eqwe', 'ewqe', 'Old Patient', '2015-01-29', '8:30 - 9:30 AM'),
+(4, 'jhn', 'doe', 'das', '12312', 'Old Patient', '2015-01-31', '9:30 - 10:30 AM'),
+(5, 'Joseph John', 'Pilapil', 'None', '09123456789', 'Old Patient', '2015-01-30', '7:30 - 8:30 AM'),
+(6, 'John', 'Doe', 'Doe', '09131221312', 'Old Patient', '2015-01-29', '7:30 - 8:30 AM');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `appointment_queue`
+--
+
+CREATE TABLE IF NOT EXISTS `appointment_queue` (
+  `date` date NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` varchar(50) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `middlename` varchar(50) NOT NULL,
+  `contactno` varchar(50) NOT NULL,
+  `patienttype` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 -- --------------------------------------------------------
 
@@ -164,14 +211,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `lastname` varchar(30) NOT NULL,
   `type` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `firstname`, `lastname`, `type`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'test', 'test', 2);
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'John', 'Doe', 2),
+(3, 'qwe', '76d80224611fc919a5d54f0ff9fba446', 'admin', 'qwe', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
