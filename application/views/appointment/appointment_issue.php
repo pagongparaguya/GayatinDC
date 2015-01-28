@@ -4,11 +4,13 @@
 	<div class="col-md-12 columns">
 	<div class="col-md-3 columns"></div>
 	<div class="col-md-6 columns">	
+<div class="element-container">
 <legend><b>Issue an Appointment</b></legend>
+<span style="color:green">NOTE : Scheduled appointment should be a day after today...</span><br>
 <span id="message" style="color:red"></span><br>
 <label for="date">Date</label>
 <input id="date" class="form-control" name="date" type="date" placeholder="Date" required/><br>
-
+		
 			<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
 			        <thead>
 			            <tr>
@@ -71,6 +73,7 @@
 			            </tr>
 			        </tbody>
 			      </table>
+			      </div>
 	</div>
 	<div class="col-md-3 columns"></div>
 </div>
@@ -96,15 +99,15 @@
 				  			
 				  			<div class="col-sm-12 col-md-12 col-lg-12 columns">				  				
 						  		 	<div class="col-sm-5 col-md-5 col-lg-5 columns">	
-							  			<label for="cno">Mobile Number</label>
-							  			<input id="cno" class="form-control" name="cnum" type="number" required/><br>
+							  			<label for="cno">Mobile Number ( FORMAT : 09123456789 )</label>
+							  			<input id="cno" class="form-control" name="cnum" type="text" pattern="[0][9][0-9]{9}" required/><br>
 				  					</div>
 				  			</div>
 							
 				  			<div class="col-sm-12 col-md-12 col-lg-12 columns">				  				
 						  		 	<div class="col-sm-5 col-md-5 col-lg-5 columns">	
-							  			<label for="tno">Telephone Number</label>
-							  			<input id="tno" class="form-control" name="tnum" type="number" required/><br>
+							  			<label for="tno">Telephone Number ( FORMAT : 123-1234)</label>
+							  			<input id="tno" class="form-control" name="tnum" type="text"pattern="[0-9]{3}[-][0-9]{4}" required/><br>
 				  					</div>
 				  			</div>
 										  			

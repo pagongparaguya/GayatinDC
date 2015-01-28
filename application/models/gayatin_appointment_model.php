@@ -51,7 +51,7 @@ class Gayatin_appointment_model extends CI_Model{
 
 	public function remove_pending_appointment($id){
 		$this->db->where('id',$id);
-		$this->db->delete('appointment');
+		$this->db->delete('appointment_queue');
 	}
 
 }

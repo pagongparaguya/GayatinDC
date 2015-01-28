@@ -75,7 +75,19 @@ class Appointment extends CI_Controller{
 		if($this->session->userdata('username')){
 			$this->gayatin_appointment_model->add_appointment($id);
 			echo "<script>alert('Appointment successfully updated.');</script>";
-			echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
+			echo "<meta http-equiv=Refresh content=0;url=../view_appointment_queue>";
+		}
+		else{
+			echo "<script>alert('Login is required.');</script>";
+			echo "<meta http-equiv=Refresh content=0;url=../cadmin>";
+		}
+	}
+
+	public function remove_pending_appointment($date,$id){
+		if($this->session->userdata('username')){
+			$this->gayatin_appointment_model->remove_pending_appointment($id);
+			echo "<script>alert('Appointment request successfully removed.');</script>";
+			redirect('appointment/view_appointment_queue_time/'.$date);
 		}
 		else{
 			echo "<script>alert('Login is required.');</script>";
