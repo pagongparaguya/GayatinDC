@@ -18,6 +18,19 @@ class Gayatin_appointment_model extends CI_Model{
 		return $q->result();
 	}
 
+	public function get_upcoming_appointment_timeslots($date){
+		$this->db->where('date',$date);
+		$q = $this->db->get('appointment');
+		return $q->result();
+	}
+
+	public function get_upcoming_appointments(){
+		$this->db->distinct();
+		$this->db->select('date');
+		$q = $this->db->get('appointment');
+		return $q->result();
+	}
+
 	public function get_appointment_data($id){
 		$this->db->where('id',$id);
 		$q = $this->db->get('appointment_queue');

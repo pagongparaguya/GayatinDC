@@ -1,5 +1,4 @@
 <?php $this->load->view('header', array('num' => 1, 'title' => 'Clinic Calendar')); ?>
-<<<<<<< HEAD
 		<div class="row">
 	  		<div class="col-md-12 columns">
 	  						<div class="col-md-6 col-md-offset-3 columns">	

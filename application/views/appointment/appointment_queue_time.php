@@ -31,8 +31,8 @@
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
                               <td ><?php echo $ts->contactno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
-                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  
-                              <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
+                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  
+                              <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -99,7 +99,7 @@
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
                               <td ><?php echo $ts->contactno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
-                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
+                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -134,7 +134,7 @@
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
                               <td ><?php echo $ts->contactno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
-                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
+                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -168,7 +168,7 @@
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
                               <td ><?php echo $ts->contactno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
-                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
+                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -202,7 +202,7 @@
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
                               <td ><?php echo $ts->contactno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
-                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
+                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -236,7 +236,7 @@
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
                               <td ><?php echo $ts->contactno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
-                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" id="add" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
+                              <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
                           </tbody>
                         </table>

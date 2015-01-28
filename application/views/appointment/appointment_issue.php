@@ -1,12 +1,17 @@
-<?php $this->load->view('header', array('num' => 1, 'title' => 'Schedule Timeslots')); ?>					
+<?php $this->load->view('header', array('num' => 7, 'title' => 'Schedule Timeslots')); ?>					
 <div id="sched">
 <div class="row" style="margin-top: 80px">
 	<div class="col-md-12 columns">
 	<div class="col-md-3 columns"></div>
 	<div class="col-md-6 columns">	
 <div class="element-container">
+<?php if(!$this->session->userdata('username')){?>
+<div class="alert alert-success" role="alert">
+	blablabla
+</div>
+<?php }?>
 <legend><b>Issue an Appointment</b></legend>
-<span style="color:green">NOTE : Scheduled appointment should be a day after today...</span><br>
+<span style="color:orange">NOTE : Scheduled appointment should be a day after today...</span><br>
 <span id="message" style="color:red"></span><br>
 <label for="date">Date</label>
 <input id="date" class="form-control" name="date" type="date" placeholder="Date" required/><br>

@@ -3,10 +3,9 @@
 					<div class="col-md-12 columns">						
 						<div class="col-md-3 columns"></div>
 						<div class="col-md-6 columns">
-<<<<<<< HEAD
+
 							<div class="element-container">
-								<legend>Create Admin Account</legend>
-								<center><span style="color:red;"><?php echo $message;?></span></center><br><br>	
+								<legend>Create Admin Account</legend><br>
 								<form method="post" action="<?php echo base_url();?>cadmin/add_staff" role="form">
 												  		
 														  		<div class="personal-inf">
@@ -33,7 +32,7 @@
 									<button id="sub" type="submit" class="btn btn-success">SUBMIT</button>
 								</form>
 							</div>
-=======
+<!-- =======
 							<legend>Create Admin Account</legend>
 							<center><span style="color:red;" id="message"></span></center><br>
 							<form method="post" action="<?php echo base_url();?>cadmin/add_staff" role="form">
@@ -61,7 +60,7 @@
 						  		</div>
 								<button id="sub" type="submit" class="btn btn-lg btn-success">SUBMIT</button>
 							</form>
->>>>>>> b13bb8fb114a8bf9db9576107462eeca7513c6dc
+>>>>>>> b13bb8fb114a8bf9db9576107462eeca7513c6dc -->
 						</div>
 						<div class="col-md-3"></div>
 					</div>

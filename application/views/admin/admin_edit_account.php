@@ -3,7 +3,7 @@
 					<div class="col-md-12 columns">						
 						<div class="col-md-3 columns"></div>
 						<div class="col-md-6 columns">
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
 							<div class="element-container">
 								<legend>Edit Admin Account</legend>	
 								<form method="post" action="<?php echo base_url();?>cadmin/update_staff" role="form">
@@ -26,7 +26,7 @@
 									<?php endforeach;?>
 								</form>
 							</div>
-=======
+<!-- =======
 							<legend>Edit Admin Account</legend>	
 							<form method="post" action="<?php echo base_url();?>cadmin/update_staff" role="form">
 				  				<?php foreach($user as $us):?>
@@ -57,7 +57,7 @@
 								<button id="sub" type="submit" class="btn btn-lg btn-success">SUBMIT</button>
 								<?php endforeach;?>
 							</form>
->>>>>>> b13bb8fb114a8bf9db9576107462eeca7513c6dc
+>>>>>>> b13bb8fb114a8bf9db9576107462eeca7513c6dc -->
 						</div>
 						<div class="col-md-3"></div>
 					</div>
