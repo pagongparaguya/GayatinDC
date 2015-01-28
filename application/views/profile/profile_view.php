@@ -3,8 +3,8 @@
 
 	<legend class="pprofile-name"><?php echo $prof->firstname;?> <?php echo $prof->middlename;?> <?php echo $prof->lastname;?></legend>
 			<div class="col-md-12 columns">
-				<button type="button" class="btn btn-info">View History of Appointments</button>
-				<button type="button" class="btn btn-info">Add an Appointment Record</button>
+				<a href="<?php echo base_url();?>records/view_history_of_appointments"><button type="button" class="btn btn-info">View History of Appointments</button></a>
+				<a href="<?php echo base_url();?>records/view_appointment_record"><button type="button" class="btn btn-info">Add an Appointment Record</button></a>
 			</div>
 			<div class="col-md-12 columns">
 				<div class="element-container">
