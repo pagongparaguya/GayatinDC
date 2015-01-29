@@ -82,7 +82,11 @@
                                   <li class="dropdown <?php if($num == 3): ?>active<?php endif;?>">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
+<<<<<<< HEAD
                                     <li><a href="<?php echo base_url();?>calendar/display">View Schedule</a></li>
+=======
+                                    <li><a href="">View Schedule</a></li>
+>>>>>>> 599ad46bd018c5531a5e6b41a43c371e699fd092
                                         <li><a href="<?php echo base_url();?>appointment/new_appointment">Issue Appointment</a></li>
                                         <!-- <li><a href="<?php echo base_url();?>cadmin/view_patients">View Appointment Queue</a></li>  -->                      
                                     </ul>

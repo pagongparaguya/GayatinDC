@@ -5,11 +5,8 @@
 	<div class="col-md-3 columns"></div>
 	<div class="col-md-6 columns">	
 <div class="element-container">
-<?php if(!$this->session->userdata('username')){?>
-<div class="alert alert-success" role="alert">
-	blablabla
-</div>
-<?php }?>
+<!-- <div class="alert alert-success" role="alert">Successfully added to queue. Our Staff will contact you for confirmation as soon as you are on the top of the queue.</div> -->
+<input type="hidden" id="val" value="<?php echo $val;?>"/>
 <legend><b>Issue an Appointment</b></legend>
 <span style="color:orange">NOTE : Scheduled appointment should be a day after today...</span><br>
 <span id="message" style="color:red"></span><br>
@@ -103,14 +100,14 @@
 				  			<input id="mname" class="form-control" name="mname" type="text" required/><br>
 				  			
 				  			<div class="col-sm-12 col-md-12 col-lg-12 columns">				  				
-						  		 	<div class="col-sm-5 col-md-5 col-lg-5 columns">	
+						  		 	<div class="col-sm-5 col-md-5 col-lg-7 columns">	
 							  			<label for="cno">Mobile Number ( FORMAT : 09123456789 )</label>
 							  			<input id="cno" class="form-control" name="cnum" type="text" pattern="[0][9][0-9]{9}" required/><br>
 				  					</div>
 				  			</div>
 							
 				  			<div class="col-sm-12 col-md-12 col-lg-12 columns">				  				
-						  		 	<div class="col-sm-5 col-md-5 col-lg-5 columns">	
+						  		 	<div class="col-sm-5 col-md-5 col-lg-7 columns">	
 							  			<label for="tno">Telephone Number ( FORMAT : 123-1234)</label>
 							  			<input id="tno" class="form-control" name="tnum" type="text"pattern="[0-9]{3}[-][0-9]{4}" required/><br>
 				  					</div>
@@ -129,7 +126,7 @@
 							
 					        <div class="col-sm-12 col-md-12 col-lg-12 columns">
 							<br />
-					        	<input id="chk" type="checkbox"> I agree that my appointment reservation is still on a pending status and the clinic staff will still contact me about my reservation.<br><br>
+					        	<input id="chk" type="checkbox"> I agree that my appointment reservation is still on a pending status and the clinic staff will still contact me if I'm on top of the queue. I will receive an SMS notification if someone else has succesfully made an appointment reservation.<br><br>
 					        </div>
 											        
 					        <button id="sub" type="submit" class="btn btn-info">Submit</button>
@@ -143,6 +140,7 @@
 <?php $this->load->view('footer'); ?>
 <script type="text/javascript">
 	$(document).ready(function(){
+		var todaysDate = new Date();
 		$('#info').hide();
 		$("#tbody").on('click','.add',function(){
 			if($('#date').val()==''){
@@ -163,12 +161,14 @@
 		});
 		$('#sub').click(function(event){
 			if($("#chk").prop("checked")){
-				//NOTHING
 			}
 			else{
-				alert('Agree to Terms to proceed.');
-				event.preventDefault();
+					alert('Agree to Terms to proceed.');
+					event.preventDefault();
 			}
 		});
+		if($('#val').val()!=0){
+			$('<div class="alert alert-success" role="alert">Successfully added to queue. Our Staff will contact you for confirmation if you are on top of the queue.</div>').insertAfter('#val');
+		}
 	});
 </script>

@@ -45,7 +45,8 @@ class Gayatin_appointment_model extends CI_Model{
 		   $fname=$row['firstname'];
 		   $lname=$row['lastname'];
 		   $mname=$row['middlename'];
-		   $conno=$row['contactno'];
+		   $mobileno=$row['mobileno'];
+		   $telno=$row['telno'];
 		   $ptype=$row['patienttype'];
 		   $date=$row['date'];
 		   $time=$row['time'];
@@ -53,7 +54,8 @@ class Gayatin_appointment_model extends CI_Model{
 		$info = array('firstname'=>$fname,
 					  'lastname'=>$lname,
 					  'middlename'=>$mname,
-					  'contactno'=>$conno,
+					  'mobileno'=>$mobileno,
+					  'telno'=>$telno,
 					  'patienttype'=>$ptype,
 					  'date'=>$date,
 					  'time'=>$time);
@@ -67,4 +69,14 @@ class Gayatin_appointment_model extends CI_Model{
 		$this->db->delete('appointment_queue');
 	}
 
+	public function check_scheduled_appointment($data){
+		$this->db->where(array('date'=>$data['date'],'time'=>$data['time']));
+		$query = $this->db->get('appointment');
+		if($query->num_rows()>0){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
 }
