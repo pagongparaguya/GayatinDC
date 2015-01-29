@@ -114,7 +114,6 @@
       <a href="<?php echo base_url();?>cadmin/new_staff"><button id="add" type="button" class="btn btn-info">Add New Staff</button></a>
 
     </section> -->
-    <?php $this->load->view('footer'); ?>
 
 <script type="text/javascript">
     $(document).ready(function() {

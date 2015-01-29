@@ -58,4 +58,5 @@
           </div>
           <div class="col-md-1 col-lg-3 columns"></div>      
 </div>
+<?php $this->load->view('footer');?>
     

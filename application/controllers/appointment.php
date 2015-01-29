@@ -7,7 +7,8 @@ class Appointment extends CI_Controller{
 	}
 
 	public function new_appointment(){
-			$this->load->view('appointment/appointment_issue');
+		$data['val']=0;
+		$this->load->view('appointment/appointment_issue',$data);
 	}
 
 	public function add_appointment(){
@@ -24,13 +25,21 @@ class Appointment extends CI_Controller{
 			$adate = strtotime($this->input->post('date'));
 			if($adate>$today){
 			//DO TEXT
-				$this->gayatin_appointment_model->add_appointment_queue($data);
-				echo "<script>alert('Successfully added to queue.');</script>";
-				if($this->session->userdata('username')){
-					echo "<meta http-equiv=Refresh content=0;url=../appointment/view_appointment_queue>";
+				$chk = $this->gayatin_appointment_model->check_scheduled_appointment($data);
+				if($chk == 0){
+					$this->gayatin_appointment_model->add_appointment_queue($data);
+					echo "<script>alert('Successfully added to queue.');</script>";
+					if($this->session->userdata('username')){
+						echo "<meta http-equiv=Refresh content=0;url=../appointment/view_appointment_queue>";
+					}
+					else{
+						$data['val'] = 1;
+						$this->load->view('appointment/appointment_issue',$data);
+					}
 				}
 				else{
-
+					echo "<script>alert('Scheduled time for the picked date is already taken. Please pick another time/date.');</script>";
+					echo "<script>window.onload=function goBack()  {  window.history.back()  }</script>";
 				}
 			}
 			else{

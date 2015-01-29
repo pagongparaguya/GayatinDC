@@ -2,10 +2,10 @@
 <?php foreach($profile as $prof):?>
 
 	<legend class="pprofile-name"><?php echo $prof->firstname;?> <?php echo $prof->middlename;?> <?php echo $prof->lastname;?></legend>
-			<div class="col-md-12 columns">
+			<!-- <div class="col-md-12 columns">
 				<a href="<?php echo base_url();?>records/view_history_of_appointments"><button type="button" class="btn btn-info">View History of Appointments</button></a>
 				<a href="<?php echo base_url();?>records/view_appointment_record"><button type="button" class="btn btn-info">Add an Appointment Record</button></a>
-			</div>
+			</div> -->
 			<div class="col-md-12 columns">
 				<div class="element-container">
 					<div class="panel panel-default frame about-us-frame">

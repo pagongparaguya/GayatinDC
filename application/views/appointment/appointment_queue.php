@@ -27,7 +27,7 @@
       <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
         <thead>
             <tr>
-                <th>Date</th>
+                <th><center>Date</center></th>
             </tr>
         </thead>
  

@@ -45,7 +45,7 @@
                                 <?php if($this->session->userdata('username')){?>
                                 <li class="<?php if($num == 1): ?>active<?php endif;?>">
                                     <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a> -->
-                                    <a href="<?php echo base_url();?>pages/clinic_sched">Clinic Schedule</a>
+                                    <a href="">Clinic Schedule</a>
                                   <!--   <ul class="dropdown-menu" role="menu">
                                         <li><a href="<?php echo base_url();?>pages/clinic_sched">View Clinic Schedule</a></li>
                                         <li><a href="<?php echo base_url();?>appointment/view_appointment_queue">View Appointment Queue</a></li>                  
@@ -83,7 +83,7 @@
                                   <li class="dropdown <?php if($num == 3): ?>active<?php endif;?>">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
-                                    <li><a href="<?php echo base_url();?>pages/clinic_sched">View Schedule</a></li>
+                                    <li><a href="">View Schedule</a></li>
                                         <li><a href="<?php echo base_url();?>appointment/new_appointment">Issue Appointment</a></li>
                                         <!-- <li><a href="<?php echo base_url();?>cadmin/view_patients">View Appointment Queue</a></li>  -->                      
                                     </ul>

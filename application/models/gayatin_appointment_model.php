@@ -67,4 +67,14 @@ class Gayatin_appointment_model extends CI_Model{
 		$this->db->delete('appointment_queue');
 	}
 
+	public function check_scheduled_appointment($data){
+		$this->db->where(array('date'=>$data['date'],'time'=>$data['time']));
+		$query = $this->db->get('appointment');
+		if($query->num_rows()>0){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
 }
