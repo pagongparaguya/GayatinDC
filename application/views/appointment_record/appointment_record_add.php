@@ -4,7 +4,9 @@
   		<div class="col-lg-12 col-md-11 col-sm-12 columns">  			
                 <div class="element-container">
 
-                      <legend>New appointment record for (patient name) on (date)</legend>
+                      <div class="page-header">
+                        New appointment record for (patient name) on (date)
+                      </div>
                       
                       <div class="col-lg-4 col-lg-offset-4 columns">
                         <label for="profile-gender">Dentist in Charge</label>
