@@ -20,16 +20,18 @@
                         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Contact No.</th>
-                                <th>Patient Type</th>
-                                <th>Action</th>
+                            <th width="40%">Name</th>
+                                <th width="20%">Mobile Number</th>
+                                <th width="20%">Telephone Number</th>
+                                <th width="15%">Patient Type</th>
+                                <th width="5%">Action</th>
                             </tr>
                         </thead>
                           <tbody>
                             <tr>
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
-                              <td ><?php echo $ts->contactno;?></td>
+                              <td ><?php echo $ts->mobileno;?></td>
+                              <td ><?php echo $ts->telno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
                               <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  
                               <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
@@ -55,16 +57,18 @@
                         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Contact No.</th>
-                                <th>Patient Type</th>
-                                <th>Action</th>
+                                <th width="40%">Name</th>
+                                <th width="20%">Mobile Number</th>
+                                <th width="20%">Telephone Number</th>
+                                <th width="15%">Patient Type</th>
+                                <th width="5%">Action</th>
                             </tr>
                         </thead>
                           <tbody>
                             <tr>
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
-                              <td ><?php echo $ts->contactno;?></td>
+                              <td ><?php echo $ts->mobileno;?></td>
+                              <td ><?php echo $ts->telno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
                               <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
@@ -90,16 +94,18 @@
                         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Contact No.</th>
-                                <th>Patient Type</th>
-                                <th>Action</th>
+                                <th width="40%">Name</th>
+                                <th width="20%">Mobile Number</th>
+                                <th width="20%">Telephone Number</th>
+                                <th width="15%">Patient Type</th>
+                                <th width="5%">Action</th>
                             </tr>
                         </thead>
                           <tbody>
                             <tr>
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
-                              <td ><?php echo $ts->contactno;?></td>
+                              <td ><?php echo $ts->mobileno;?></td>
+                              <td ><?php echo $ts->telno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
                               <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
@@ -126,16 +132,18 @@
                         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Contact No.</th>
-                                <th>Patient Type</th>
-                                <th>Action</th>
+                                <th width="40%">Name</th>
+                                <th width="20%">Mobile Number</th>
+                                <th width="20%">Telephone Number</th>
+                                <th width="15%">Patient Type</th>
+                                <th width="5%">Action</th>
                             </tr>
                         </thead>
                           <tbody>
                             <tr>
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
-                              <td ><?php echo $ts->contactno;?></td>
+                              <td ><?php echo $ts->mobileno;?></td>
+                              <td ><?php echo $ts->telno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
                               <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
@@ -161,16 +169,18 @@
                         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Contact No.</th>
-                                <th>Patient Type</th>
-                                <th>Action</th>
+                                <th width="40%">Name</th>
+                                <th width="20%">Mobile Number</th>
+                                <th width="20%">Telephone Number</th>
+                                <th width="15%">Patient Type</th>
+                                <th width="5%">Action</th>
                             </tr>
                         </thead>
                           <tbody>
                             <tr>
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
-                              <td ><?php echo $ts->contactno;?></td>
+                              <td ><?php echo $ts->mobileno;?></td>
+                              <td ><?php echo $ts->telno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
                               <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
@@ -196,16 +206,18 @@
                         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Contact No.</th>
-                                <th>Patient Type</th>
-                                <th>Action</th>
+                                <th width="40%">Name</th>
+                                <th width="20%">Mobile Number</th>
+                                <th width="20%">Telephone Number</th>
+                                <th width="15%">Patient Type</th>
+                                <th width="5%">Action</th>
                             </tr>
                         </thead>
                           <tbody>
                             <tr>
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
-                              <td ><?php echo $ts->contactno;?></td>
+                              <td ><?php echo $ts->mobileno;?></td>
+                              <td ><?php echo $ts->telno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
                               <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
@@ -231,16 +243,18 @@
                         <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" style="text-align: center">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Contact No.</th>
-                                <th>Patient Type</th>
-                                <th>Action</th>
+                                <th width="40%">Name</th>
+                                <th width="20%">Mobile Number</th>
+                                <th width="20%">Telephone Number</th>
+                                <th width="15%">Patient Type</th>
+                                <th width="5%">Action</th>
                             </tr>
                         </thead>
                           <tbody>
                             <tr>
                               <td ><?php echo $ts->lastname;?>, <?php echo $ts->firstname;?> <?php echo $ts->middlename;?></td>
-                              <td ><?php echo $ts->contactno;?></td>
+                              <td ><?php echo $ts->mobileno;?></td>
+                              <td ><?php echo $ts->telno;?></td>
                               <td ><?php echo $ts->patienttype;?></td>
                               <td ><a href="<?php echo base_url();?>appointment/accept_appointment/<?php echo $ts->id;?>" onclick="return confirm('Are sure to accept ?');"><button type="button" class="btn btn-info add">ACCEPT</button></a>  <a href="<?php echo base_url();?>appointment/remove_pending_appointment/<?php echo $date;?>/<?php echo $ts->id;?>" onclick="return confirm('Are sure to delete ?');"><button type="button" class="btn btn-info remove">REMOVE</button></a></td>
                             </tr>
@@ -257,56 +271,6 @@
         </tbody>
       </table>
       </div>
-
-     <!--  <div class="about-us-content col-sm-12 col-md-12 col-lg-12 columns ">
-        <div class="col-md-1 col-lg-3 columns"></div>
-        <div class="col-sm-12 col-md-10 col-lg-6 columns">
-                  <div class="panel panel-default frame about-us-frame">
-                      <div class="panel-heading">
-                           <span class="glyphicon glyphicon-home"></span>
-                           <span>Visit Our Clinic</span>
-                      </div>
-                      <div class="panel-body">
-                            Subangdako, Mandaue City, Cebu
-                      </div>
-                  </div>
-                  
-                  <div class="panel panel-default frame about-us-frame">
-                      <div class="panel-heading">
-                            <span class="glyphicon glyphicon-phone-alt"></span>
-                            <span>Contact Us</span>
-                      </div>
-                      <div class="panel-body">
-                            <p>344 - 0377</p>
-                            <p>511 - 9250</p>
-                      </div>
-                  </div>
-                  
-                  <div class="panel panel-default frame about-us-frame">
-                      <div class="panel-heading">
-                          <span class="glyphicon glyphicon-time"></span>
-                          <span>Clinic Schedules</span>
-                      </div>
-                  
-                      <div class="panel-body">
-                          
-                              <p class="italicized">Monday - Friday</p>
-                              <p>7:30am - 4:00pm</p>
-                              <p>(on school days)</p>
-                              <p>9:00am - 5:00pm</p>
-                              <p>(on summer)</p>
-                          
-                      
-                          
-                              <p class="italicized">Saturday</p>
-                              <p>9:00am - 5:00pm</p>
-                          
-                      </div>
-                  </div>
-          </div>
-          <div class="col-md-1 col-lg-3 columns"></div>      
-</div> -->
-
 </div>
 <?php $this->load->view('footer'); ?>
 <script type="text/javascript">
@@ -340,23 +304,5 @@
           $('#g').html("NO PENDING APPOINTMENT");
         }
         $('#example').dataTable();
-
-        // $('#add').click(function(){
-        //   $('#stfmod').modal({backdrop: 'static',keyboard: false}); 
-        //   $('#stfmod').modal('show');
-        // });
-        // $('#content').hide();
-        // $('#sear').click(function(){
-        //   if($('#date').val()==''){
-        //     $('#message').html("Date / Time is blank.");
-        //   }
-        //   else if($("#time :selected").val()==''){
-        //     $('#message').html("Date / Time is blank.");
-        //   }
-        //   else{
-        //     $('#message').html("");
-        //     alert('a');
-        //   }
-        // });
     });
 </script>

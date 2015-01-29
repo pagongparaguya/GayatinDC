@@ -2,62 +2,6 @@
 		<div class="row">
 	  		<div class="col-md-12 columns">
 	  						<div class="col-md-6 col-md-offset-3 columns">	
-	  								<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-	  								        <thead>
-	  								            <tr>
-	  								                <th colspan="2" style="text-align: center; font-weight: bold; font-size: 150%">The Clinic Timeslots</th>
-	  								            </tr>
-	  								        </thead>
-	  								 
-	  								        <tbody style="text-align: center">						          
-	  								            <tr>					                
-	  								            	<td width="80%">7:30 - 8:30</td>
-	  								            	<td width="20%">
-	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
-	  								            	</td>
-	  								            </tr>
-	  								            <tr>					                
-	  								            	<td width="80%">8:30 - 9:30</td>
-	  								            	<td width="20%">
-	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
-	  								            	</td>
-	  								            </tr>
-	  								            <tr>					                
-	  								            	<td width="80%">9:30 - 10:30</td>
-	  								            	<td width="20%">
-	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
-	  								            	</td>
-	  								            </tr>
-	  								            <tr>					                
-	  								            	<td>10:30 - 11:30</td>
-	  								            	<td width="20%">
-	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
-	  								            	</td>
-	  								            </tr>
-	  								            <tr>					                
-	  								            	<td colspan="2">11:30 - 1:00  (LUNCH BREAK)</td>	  								            	
-	  								            </tr>
-	  								            <tr>					                
-	  								            	<td width="80%">1:00 - 2:00</td>
-	  								            	<td width="20%">
-	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
-	  								            	</td>
-	  								            </tr>
-	  								            <tr>					                
-	  								            	<td width="80%">2:00 - 3:00</td>
-	  								            	<td width="20%">
-	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
-	  								            	</td>
-	  								            </tr>						          
-	  								            <tr>					                
-	  								            	<td width="80%">3:00 - 4:00</td>
-	  								            	<td width="20%">
-	  								            		<a href="<?php echo base_url();?>pages/add_appointment"><button type="button" class="btn btn-info">Add Appointment</button></a>
-	  								            	</td>
-	  								            </tr>
-	  								        </tbody>
-	  								      </table>
-
 	  								      <!-- MODAL FOR OPENING A SCHEDULE -->									
 	  								      <div class="modal fade" id="modal-opensched" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											  <div class="modal-dialog">
