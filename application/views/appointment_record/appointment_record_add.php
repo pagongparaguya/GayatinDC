@@ -1,9 +1,6 @@
-<?php $this->load->view('header', array('num' => 2, 'title' => 'Add New Patient')); ?>
-		<form method="post" action="<?php echo base_url();?>cadmin/add_patient_record" role="form">
-		<div class="row clearfix">
-  		<div class="col-lg-12 col-md-11 col-sm-12 columns">  			
+<?php $this->load->view('header', array('num' => 2, 'title' => 'Add New Patient')); ?>		
+<form method="post" action="<?php echo base_url();?>cadmin/add_patient_record" role="form">
                 <div class="element-container">
-
                       <div class="page-header">
                         New appointment record for (patient name) on (date)
                       </div>
@@ -25,17 +22,6 @@
                       <div class="col-lg-6 columns col-lg-offset-3" style="margin-bottom: 10px;">
                           <label for="other-findings">Other Findings</label>
                           <textarea name="" id="other-findings" class="form-control" cols="50" rows="2" style="resize: none"></textarea>  
-                      </div>
-
-                      <div class="col-lg-12 columns col-lg-offset-3" style="margin-bottom: 10px;">
-                          <div class="col-lg-4 columns">
-                            <label for="tot-amt-of-treatments">Total Amount for Treatment(s) Performed (PHP)</label>
-                            <span id="tot-amt-of-treatments" class="form-control" style="width: 60%;">(Total Amount)</span>
-                          </div>
-                          <div class="col-lg-2 columns">
-                            <label for="amt-rcvd">Amount paid (PHP)</label>
-                            <input id="amt-rcvd" class="form-control" type="number" min="0" />
-                          </div>
                       </div>
 
                       <div class="col-lg-5 columns" style="margin: 10px 0 10px 0;">
@@ -74,19 +60,24 @@
                           </tr>
                         </tbody>
                       </table>
-                </div>
-  		</div>
+
+                      <div class="col-lg-5 col-lg-offset-2 columns">
+                        <label for="tot-amt-of-treatments">Total Amount for Treatment(s) Performed (PHP)</label>
+                        <span id="tot-amt-of-treatments" class="form-control" style="width: 60%;">(Total Amount)</span>
+                      </div>
+                      <div class="col-lg-3 columns">
+                        <label for="amt-rcvd">Amount paid (PHP)</label>
+                        <input id="amt-rcvd" class="form-control" type="number" min="0" />
+                      </div>
+                      
+                      <br/><br/><br/> 
+                      <a class="sbmit" href=""><button class="btn btn-info">Submit</button></a> 
+                      
                         
-    </div>
-              <div class="col-md-12 columns">
-                <div>
-                  <a href=""><button class="btn btn-info">Submit</button></a> 
+                      
                 </div>
-              </div>
-          
-          </div>
-          </form>
-</div>
+</form>
+
 
 <?php $this->load->view('footer'); ?>
 <script type="text/javascript">
