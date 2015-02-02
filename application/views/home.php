@@ -11,23 +11,23 @@
                       <div class="carousel-inner">
                     
                         <div class="item active">
-                          <img src="<?php echo base_url();?>assets/img/slider/teeth1.jpg" alt="image1">
+                          <img src="<?php echo base_url();?>assets/img/slider/slider.jpg" alt="image1">
                           <div class="carousel-caption">
-                            <h3>First Teeth</h3>
+                            <h3>Gayatin Dental Clinic</h3>
                           </div>
                         </div>
                     
                         <div class="item">
-                          <img src="<?php echo base_url();?>assets/img/slider/teeth2.jpg" alt="image1">
+                          <img src="<?php echo base_url();?>assets/img/slider/slider.jpg" alt="image1">
                           <div class="carousel-caption">
-                            <h3>Second Teeth</h3>
+                            <h3>Gayatin Dental Clinic</h3>
                           </div>
                         </div>
                     
                         <div class="item">
-                          <img src="<?php echo base_url();?>assets/img/slider/teeth3.jpg" alt="image1">
+                          <img src="<?php echo base_url();?>assets/img/slider/slider.jpg" alt="image1">
                           <div class="carousel-caption">
-                            <h3>Third Teeth</h3>
+                            <h3>Gayatin Dental Clinic</h3>
                           </div>
                         </div>
                          
