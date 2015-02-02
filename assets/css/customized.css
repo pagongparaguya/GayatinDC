@@ -290,3 +290,7 @@ body {
 			background-color:red;
 			}
 		
+/* ----- RADIOS / CHECKBOXES ----- */
+.radio, .checkbox {
+	margin-top: 0;
+}

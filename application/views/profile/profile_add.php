@@ -22,19 +22,28 @@
                   <label for="profile-address">Home Address</label>
                   <input id="profile-address" class="form-control" name="hadd" type="text" required /><br>
                   
-                  <label for="profile-tel">Telephone Number ( FORMAT : 123-1234 )</label>
-                  <input id="profile-tel" class="form-control" name="htno" pattern="[0-9]{3}[-][0-9]{4}" type="text" /><br>
+                  <label for="profile-tel">Telephone Number</label>
+                  <input id="profile-tel" placeholder="example: 722-6971" class="form-control" name="htno" pattern="[0-9]{3}[-][0-9]{4}" type="text" /><br>
                   
-                  <label for="profile-mobile">Mobile Number ( FORMAT : 09123456789 )</label>
-                  <input id="profile-mobile" class="form-control" name="mno" type="text" pattern="[0][9][0-9]{9}" required/><br>
+                  <label for="profile-mobile">Mobile Number</label>
+                  <input id="profile-mobile" placeholder="example: 09269440273" class="form-control" name="mno" type="text" pattern="[0][9][0-9]{9}" required/><br>
                 
                   <div class="col-lg-3 columns">
-                    <label for="profile-gender">Gender</label>
-                    <select id="profile-gender"class="form-control" name="gender" required>
-                                  <option value="" disabled default selected style="display:none;"></option>
-                                  <option value="Male">Male</option>
-                                  <option value="Female">Female</option>
-                                </select><br>
+                      <label for="profile-gender">Gender</label>
+                      <div class="profile-gender">
+                            <div class="radio">
+                              <label for="male">
+                                <input type="radio" name="gender" id="optionRadios1" value="male" />
+                                  Male
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label for="female">
+                                <input type="radio" name="gender" id="optionRadios2" value="female" />
+                                  Female
+                              </label>
+                            </div>
+                      </div>
                   </div>
                 
                   <div class="col-lg-3 columns">
@@ -51,8 +60,8 @@
                   <label for="profile-oaddress">Office Address</label>
                   <input id="profile-oaddress"class="form-control" name="oadd" type="text" /><br>
               
-                  <label for="profile-otel">Telephone Number ( FORMAT : 123-1234 )</label>
-                  <input id="profile-otel" class="form-control" name="otno" pattern="[0-9]{3}[-][0-9]{4}" type="text" /><br>
+                  <label for="profile-otel">Telephone Number</label>
+                  <input id="profile-otel" placeholder="example: 722-471" class="form-control" name="otno" pattern="[0-9]{3}[-][0-9]{4}" type="text" /><br>
                 </div>
               
               <div class="col-lg-6 columns">
@@ -87,21 +96,7 @@
                         <option value="Poor">Poor</option>
                      </select><br>
                   </div>
-              
-                <!-- <div class="col-md-6 columns">
-                <span><h4>Denture</h4></span>
-              
-                <div class="col-md-4 columns">
-                  <br><input id="checkbox1" name-"dupper" type="checkbox"><label for="checkbox1"> Upper</label><br>
-                  <br><input id="checkbox2" name="dlower" type="checkbox"><label for="checkbox2"> Lower</label>
-                </div>
-              
-                <div class="col-md-4 columns">
-                  <input class="form-control" name="usince" disabled type="text"  placeholder="Since" /><br>
-                    <input class="form-control" name="lsince" disabled type="text" placeholder="Since" /><br>
-                </div>
-              </div> -->
-                 
+
                  <div class="col-lg-6 columns">
                     <label for="profile-hob">Previous History of Bleeding</label>
                     <select id="profile-hob" class="form-control" name="phb" required>

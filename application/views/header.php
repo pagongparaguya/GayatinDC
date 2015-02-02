@@ -43,12 +43,7 @@
                                 
                                 <?php if($this->session->userdata('username')){?>
                                 <li class="<?php if($num == 1): ?>active<?php endif;?>">
-                                    <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a> -->
                                     <a href="<?php echo base_url();?>calendar/display">Clinic Schedule</a>
-                                  <!--   <ul class="dropdown-menu" role="menu">
-                                        <li><a href="<?php echo base_url();?>pages/clinic_sched">View Clinic Schedule</a></li>
-                                        <li><a href="<?php echo base_url();?>appointment/view_appointment_queue">View Appointment Queue</a></li>                  
-                                    </ul> -->
                                 </li>
 
                                 <li class="dropdown <?php if($num == 7): ?>active<?php endif;?>">
@@ -60,12 +55,8 @@
                                     </ul>
                                 </li>
                 
-                                <li class="dropdown <?php if($num == 2): ?>active<?php endif;?>">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Patient Profile<span class="caret"></span></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="<?php echo base_url();?>cadmin/new_patient">Create New Profile</a></li>
-                                        <li><a href="<?php echo base_url();?>cadmin/view_patients">View Profiles</a></li>                       
-                                    </ul>
+                                <li class="<?php if($num == 2): ?>active<?php endif;?>">
+                                    <a href="<?php echo base_url();?>cadmin/view_patients">Patient Profiles</a>
                                 </li>
             
                                 <?php if($this->session->userdata('handler')){?>
@@ -76,19 +67,11 @@
                                 
                                 <?php }?>
                                 <?php if(!$this->session->userdata('username')){?>
-                                  <!-- <li class="<?php if($num == 3): ?>active<?php endif;?>">
-                                    <a href="<?php echo base_url();?>pages/clinic_sched">Clinic Schedule</a>
-                                  </li> -->
-                                  <li class="dropdown <?php if($num == 3): ?>active<?php endif;?>">
+                                <li class="dropdown <?php if($num == 3): ?>active<?php endif;?>">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Clinic Schedule<span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
-<<<<<<< HEAD
-                                    <li><a href="<?php echo base_url();?>calendar/display">View Schedule</a></li>
-=======
-                                    <li><a href="">View Schedule</a></li>
->>>>>>> 599ad46bd018c5531a5e6b41a43c371e699fd092
-                                        <li><a href="<?php echo base_url();?>appointment/new_appointment">Issue Appointment</a></li>
-                                        <!-- <li><a href="<?php echo base_url();?>cadmin/view_patients">View Appointment Queue</a></li>  -->                      
+                                      <li><a href="<?php echo base_url();?>calendar/display">View Schedule</a></li>
+                                      <li><a href="<?php echo base_url();?>appointment/new_appointment">Issue Appointment</a></li>                                       
                                     </ul>
                                 </li>
                 
@@ -100,27 +83,10 @@
                                     <a href="<?php echo base_url();?>pages/about_us">About Us</a>
                                   </li>
                                 <?php }?>
-            
-                                     <!-- sample dropdown -->
-                                <!-- <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                                  <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                  </ul>
-                                </li> -->
-                
-                              
-                      <!-- end of sample -->
-            
+
                         </ul>                  
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
           </nav>
-                <!--- end of navbar -->
+<!--- end of navbar -->
 
