@@ -8,5 +8,9 @@
 		public function view_appointment_record(){
 			$this->load->view('appointment_record/appointment_record_view');
 		}
+
+		public function add_appointment_record(){
+			$this->load->view('appointment_record/appointment_record_add');
+		}
 	}	
 ?>

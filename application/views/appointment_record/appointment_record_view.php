@@ -1,23 +1,39 @@
-<?php $this->load->view('header', array('num' => 1, 'title' => 'Date of Appointment Record')); ?>
+<?php $this->load->view('header', array('num' => 2, 'title' => 'Date of Appointment Record')); ?>
 <div class="col-md-12 col-lg-12 columns">
-				<div class="col-md-4 col-lg-3 columns"></div>
-				<div class="col-md-4 col-sm-12 col-lg-6 columns">					
+				<div class="col-md-4 col-sm-12 col-lg-8 col-lg-offset-2 columns">					
 						<div class="element-container nomargin-element-container">
-							<h3>Date of Appointment</h3>
-							<br>
-							<h5>Dentist in Charge: (name of dentist)</h5>
-							<h5>Total Amount for Services Rendered (PHP): (The amount)</h5>
-							<h5>Amount of Payment Received (PHP): (The amount) </h5>
-							<h5>Remaining Balance: (The amount) </h5>
-
+							<legend>Date of Appointment</legend>
+							<div class="col-lg-6 col-lg-offset-4 columns">
+								<br>
+								<dl class="dl-vertical">
+								  <dt>Dentist in charge</dt>
+								  <dd>Dr. Cynthia Gayatin</dd>
+								</dl>
+								
+								<dl class="dl-vertical">
+								  <dt>Total amount for treatments rendered (PHP)</dt>
+								  <dd>1000</dd>
+								</dl>
+								
+								<dl class="dl-vertical">
+								  <dt>Amount paid (PHP)</dt>
+								  <dd>1000</dd>
+								</dl>
+								
+								<dl class="dl-vertical">
+								  <dt>Remaining balance</dt>
+								  <dd>0</dd>
+								</dl>
+							</div>
+				
 							<br><br>
 							<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
 							        <thead>
 							            <tr>
-							                <th style="text-align: center; font-weight: bold; font-size: 100%">Service Rendered</th>
-							                <th style="text-align: center; font-weight: bold; font-size: 100%">Tooth</th>
-							                <th style="text-align: center; font-weight: bold; font-size: 100%">Part of Tooth</th>
-							                <th style="text-align: center; font-weight: bold; font-size: 100%">Price of Service Rendered (PHP)</th>
+							                <th width="50%" style="text-align: center; font-weight: bold; font-size: 100%">Treatment Rendered</th>
+				                            <th width="10%" style="text-align: center; font-weight: bold; font-size: 100%">Tooth</th>
+				                            <th width="25%" style="text-align: center; font-weight: bold; font-size: 100%">Tooth Surface</th>
+				                            <th width="15%" style="text-align: center; font-weight: bold; font-size: 100%">Price (PHP)</th>
 							            </tr>
 							        </thead>
 							 
@@ -32,7 +48,7 @@
 							            	<td>Tuli</td>
 							            	<td>Top</td>
 							            	<td>Meshial</td>
-							            	<td>100</td>
+							            	<td>100 000</td>
 							            </tr>							            
 							            <tr>					                
 							            	<td>Tuli</td>
@@ -44,6 +60,5 @@
 							      </table>
 						</div>				       
 				</div>
-				<div class="col-md-4 col-lg-3 columns"></div>
 </div>
 <?php $this->load->view('footer'); ?>

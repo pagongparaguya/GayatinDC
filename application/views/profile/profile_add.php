@@ -1,3 +1,4 @@
+
 <?php $this->load->view('header', array('num' => 2, 'title' => 'Add New Patient')); ?>
 <div class="row">
   <div class="col-lg-12 columns">
@@ -160,7 +161,6 @@
     </div>
     </div>
 </div>
-
 
 <?php $this->load->view('footer'); ?>
 <script type="text/javascript">

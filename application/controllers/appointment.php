@@ -16,7 +16,8 @@ class Appointment extends CI_Controller{
 			$data = array('firstname' =>  mysql_real_escape_string($this->input->post('fname')),
 						  'lastname' => mysql_real_escape_string($this->input->post('lname')),
 						  'middlename' => mysql_real_escape_string($this->input->post('mname')),
-						  'contactno' => mysql_real_escape_string($this->input->post('cnum')),
+						  'mobileno' => mysql_real_escape_string($this->input->post('cnum')),
+						  'telno' => mysql_real_escape_string($this->input->post('tnum')),
 						  'patienttype' => mysql_real_escape_string($this->input->post('ptype')),
 						  'date' => mysql_real_escape_string($this->input->post('date')),
 						  'time' => mysql_real_escape_string($this->input->post('time')));
